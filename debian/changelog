@@ -1,0 +1,40 @@
+libcbor (0.8.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Vincent Bernat ]
+  * New upstream release. Closes: #980300.
+  * d/copyright: update years
+  * d/control: switch to debhelper-compat 13
+  * d/rules: build shared lib
+  * d/control: bump Standards-Version
+  * d/examples: fix installation of example files
+  * d/control: rename libcbor0 to libcbor0.8 to match new ABI versioning
+  * d/control: add Built-Using for -doc package.
+
+  [ Helmut Grohne ]
+  * Reduce Build-Depends: (Closes: #981620)
+    + d/rules: Move documentation build to -indep overrides.
+    + Enable sphinxdoc dh addon via B-D.
+    + Demote all sphinx dependencies to B-D-I. Be explicit about doxygen.
+    + d/rules: Skip cmake build in -indep overrides.
+    + Demote cmake and cmocka to B-D-A.
+    + Annotate cmocka <!nocheck>.
+
+ -- Vincent Bernat <bernat@debian.org>  Wed, 22 Sep 2021 14:35:54 +0200
+
+libcbor (0.5.0+dfsg-2) unstable; urgency=medium
+
+  * d/control: migrate to salsa.debian.org.
+  * d/install: install pkg-config file.
+
+ -- Vincent Bernat <bernat@debian.org>  Thu, 17 May 2018 17:08:03 +0200
+
+libcbor (0.5.0+dfsg-1) unstable; urgency=medium
+
+  * Initial release. Closes: #787015.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 18 Dec 2017 07:26:05 +0100
+
